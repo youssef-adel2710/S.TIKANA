@@ -1,0 +1,268 @@
+/* ==========================================================
+   S.TIKANA — MENU DATA
+   Structured so the café owner can easily update items/prices.
+   Each category: { id, en, ar, icon, items: [{en, ar, price}] }
+   ========================================================== */
+
+const MENU_DATA = [
+  {
+    id: "hot-drinks",
+    en: "Hot Drink",
+    ar: "مشروبات ساخنة",
+    icon: "☕",
+items: [
+    { en: "Tea", ar: "شاي", price: 25 },
+    { en: "Tea & Mint", ar: "شاي بالنعناع", price: 30 },
+    { en: "Tea & Mint Baguette", ar: "شاي بالنعناع باكيت", price: 35 },
+    { en: "Tea Baguette", ar: "شاي باكيت", price: 30 },
+    { en: "Green Tea", ar: "شاي أخضر", price: 30 },
+    { en: "Flavored Tea", ar: "شاي نكهات", price: 30 },
+    { en: "Tea & Milk", ar: "شاي باللبن", price: 50 },
+    { en: "Brad Tea", ar: "شاي براد", price: 35 },
+    { en: "Zarda Tea", ar: "شاي زردة", price: 35 },
+
+    { en: "2 Cups Brad Tea", ar: "كوبين شاي براد", price: 50 },
+    { en: "3 Cups Brad Tea", ar: "3 كوبيات شاي براد", price: 70 },
+
+    { en: "2 Cups Of Flavor Tea", ar: "2 كوب شاي نكهة", price: 60 },
+    { en: "3 Cups Of Flavor Tea", ar: "3 كوب شاي نكهة", price: 75 },
+
+    { en: "Turkish Coffee", ar: "قهوة تركي", price: 35 },
+    { en: "Double Coffee", ar: "قهوة دوبل", price: 60 },
+    { en: "French Coffee", ar: "قهوة فرنساوي", price: 60 },
+    { en: "Hazelnut Coffee", ar: "قهوة بندق", price: 60 },
+    
+    { en: "skalans", ar: "ﺳﻜﻼﻧﺲ", price: 50 }, 
+
+    { en: "Nescaffee Black", ar: "نسكافيه بلاك", price: 50 },
+    { en: "Nescaffee & Milk", ar: "نسكافيه بحليب", price: 85 },
+
+    { en: "Single Espresso", ar: "إسبريسو سنجل", price: 70 },
+    { en: "Espresso Double", ar: "إسبريسو دبل", price: 90 },
+    { en: "Cappuccino", ar: "كابتشينو", price: 105 },
+    { en: "Latte", ar: "لاتيه", price: 100 },
+    { en: "American Coffee", ar: "قهوة أمريكية", price: 100 },
+    { en: "Mocha", ar: "موكا", price: 100 },
+    { en: "Macchiato", ar: "ماكياتو", price: 100 },
+    { en: "Coffee Mix", ar: "كوفي ميكس", price: 50 },
+
+    // Additional Hot Drinks
+    { en: "Orange herbs", ar: "أعشاب برتقال", price: 70 },
+    { en: "Ginger Lemon", ar: "جنزبيل ليمون", price: 35 },
+    { en: "Hot Chocolate", ar: "هوت شوكلت", price: 80 },
+    { en: "Hot Apple Juice", ar: "هوت سيدر", price: 70 },
+    { en: "Anise", ar: "يانسون", price: 30 },
+    { en: "Mint", ar: "نعناع", price: 30 },
+    { en: "Hibiscus", ar: "كركديه", price: 30 },
+    { en: "Herbal Tea", ar: "أعشاب", price: 50 },
+    { en: "Cinnamon & Ginger", ar: "قرفة و زنجبيل", price: 35 },
+    { en: "Ginger & Cinnamon with Milk", ar: "زنجبيل و قرفة بحليب", price: 75 },
+    { en: "Fenugreek with Milk", ar: "حلبة بحليب", price: 60 },
+    { en: "Fenugreek", ar: "حلبة", price: 30 },
+
+    { 
+        en: "The Emperor", 
+        ar: "الإمبراطور", 
+        desc_en: "(Cinnamon +  Milk + Sesame)", 
+        desc_ar: "(قرفه + حليب + سمسم )",
+        price: 80 
+      },
+
+    { en: "Sahlab", ar: "سحلب", price: 90 },
+    { en: "Sahlab with Nuts", ar: "سحلب مكسرات", price: 100 },
+    { en: "Sahlab with Fruits", ar: "سحلب فواكه", price: 125 },
+    { en: "Sahlab Stickana", ar: "سحلب ستيكانا", price: 150 },
+    { en: "Hot Lemon", ar: "ليمون ساخن", price: 30 },
+    { en: "Sham Chickpeas", ar: "حمص شام", price: 70 },
+    { en: "Milk", ar: "حليب", price: 50 },
+  ],
+},
+
+  
+  {
+    id: "mojito",
+    en: "Mojito",
+    ar: "موهيتو",
+    icon: "🍹",
+    items: [
+      { en: "Raspberry", ar: "توت بري", price: 80 },
+      { en: "Lemon & Mint", ar: "ليمون نعناع", price: 80 },
+      { en: "Strawberry", ar: "فراولة", price: 80 },
+      { en: "Blueberry", ar: "بلو بيري", price: 80 },
+      { en: "Cherry Cola", ar: "شيري كولا", price: 100 },
+      { en: "Cherry Red Bull", ar: "شيري ريدبول", price: 150 },
+      { en: "Sunshine", ar: "صن شاين", price: 180 },
+    ],
+  },
+
+  {
+  id: "milkshake",
+  en: "Milkshake",
+  ar: "ميلك شيك",
+  icon: "🥛",
+  items: [
+    { en: "Vanilla", ar: "فانيليا", price: 105 },
+    { en: "Strawberry", ar: "فراوله", price: 105 },
+    { en: "Mango", ar: "مانجو", price: 105 },
+    { en: "Chocolate", ar: "شوكليت", price: 105 },
+    { en: "Oreo", ar: "أوريو", price: 110 },
+    { en: "Blueberry", ar: "بلوبيري", price: 105 },
+    { en: "Lotus", ar: "لوتس", price: 110 },
+    { en: "Sneakers", ar: "سنيكرز", price: 180 },
+    { en: "Kit Kat", ar: "كيت كات", price: 170 },
+  ],
+  },
+  
+  {
+  id: "fresh-juice",
+  en: "Fresh Juice",
+  ar: "عصائر طازجة",
+  icon: "🍊",
+  items: [
+    { en: "Mango", ar: "مانجو", price: 85 },
+    { en: "Kiwi", ar: "كيوي", price: 125 },
+    { en: "Dates with Milk", ar: "تمر بالحليب", price: 110 },
+    { en: "Dates with Milk Pieces", ar: "تمر بالحليب قطع", price: 125 },
+    { en: "Jujube", ar: "عناب", price: 75 },
+    { en: "Avocado", ar: "أفوكادو", price: 160 },
+    { en: "Avocado Nuts", ar: "أفوكادو مكسرات", price: 175 },
+    { en: "Romans", ar: "رمان", price: 80 },
+    { en: "Cantaloupe", ar: "كنتالوب", price: 90 },
+    { en: "Cantaloupe & Ice Cream", ar: "كنتالوب آيس كريم", price: 120 },
+    { en: "Yogurt", ar: "زبادي", price: 80 },
+    { en: "Yogurt Honey", ar: "زبادي عسل", price: 85 },
+    { en: "Fruit Yogurt", ar: "زبادي فواكه", price: 100 },
+    { en: "Lemon", ar: "ليمون", price: 60 },
+    { en: "Lemon Mint", ar: "ليمون نعناع", price: 75 },
+    { en: "Orange", ar: "برتقال", price: 85 },
+    { en: "Strawberry", ar: "فراوله", price: 85 },
+    { en: "Guava", ar: "جوافه", price: 85 },
+    { en: "Guava Milk", ar: "جوافه حليب", price: 105 },
+    { en: "Apple", ar: "تفاح", price: 105 },
+    { en: "Banana With Milk", ar: "موز بحليب", price: 85 },
+    { en: "Watermelon", ar: "بطيخ", price: 100 },
+    { en: "Beet", ar: "بنجر", price: 100 },
+    { en: "Dates Ice Cream", ar: "بلح آيس كريم", price: 150 },
+    { en: "Pineapple", ar: "أناناس", price: 100 },
+    { en: "Peach", ar: "خوخ", price: 100 },
+    { en: "Tangerine", ar: "يوسفي", price: 85 },
+  ],
+},
+
+ {
+  id: "smoothie",
+  en: "Smoothie",
+  ar: "سموذي",
+  icon: "🍓",
+  items: [
+    { en: "Mango", ar: "مانجو", price: 90 },
+    { en: "Strawberries", ar: "الفراولة", price: 90 },
+    { en: "Lemon", ar: "ليمون", price: 70 },
+    { en: "Lemon & Mint", ar: "ليمون نعناع", price: 80 },
+    { en: "Mix Berry", ar: "ميكس بيري", price: 90 },
+    { en: "Blueberry", ar: "بلوبيري", price: 90 },
+    { en: "Raspberry", ar: "راسبيري", price: 90 },
+    { en: "Watermelon", ar: "بطيخ", price: 100 },
+    { en: "Smoothie", ar: "سموزي", price: 80 },
+  ],
+},
+
+{
+    id: "cocktails",
+    en: "Cocktails",
+    ar: "كوكتيلات",
+    icon: "🍹",
+    items: [
+      { 
+        en: "Raheem Drink", 
+        ar: "مشروب رحيم", 
+        desc_en: "(Dates with milk pieces banana + nuts + honey)", 
+        desc_ar: "(بلح حليب قطع موز + مكسرات + عسل )",
+        price: 150 
+      },
+      { en: "Florida", ar: "فلوريدا", price: 100 },
+      { en: "Paradise Fruit", ar: "فاكهة براديس", price: 105 },
+      { en: "Banana Rama", ar: "بانانا راما", price: 105 },
+      { en: "Banana Split", ar: "بانانا سبليت", price: 105 },
+      { en: "Mango Tango", ar: "مانجو تانجو", price: 105 },
+      { en: "Energy Drink", ar: "مشروب طاقة", price: 150 },
+      { en: "Cinderella", ar: "سندريلا", price: 100 },
+      { en: "Pink Lady", ar: "بينك ليدي", price: 105 },
+      { en: "Stekana Cocktail", ar: "كوكتيل ستيكانا", price: 150 },
+      { en: "Barista Cocktail", ar: "كوكتيل باريستا", price: 125 },
+      { en: "Cocktail of the Day", ar: "كوكتيل اليوم", price: 125 },
+      { en: "Bomb", ar: "قنبلة", price: 150 },
+      { en: "Mango - Peach - Ice Cream", ar: "مانجو - خوخ - أيس كريم", price: 125 },
+    ],
+  },
+
+  {
+    id: "ice-coffee",
+    en: "Ice Coffee",
+    ar: "قهوة مثلجة",
+    icon: "🧊",
+    items: [
+      { en: "Ice Tea", ar: "ايس تى", price: 65 },
+      { en: "Ice Brown", ar: "ايس براون", price: 100 },
+      { en: "Ice Mocca", ar: "ايس موكا", price: 100 },
+      { en: "Ice Latte", ar: "ايس لاتيه", price: 100 },
+      { en: "Chocolate Frappy", ar: "فرابي شوكولاتة", price: 110 },
+      { en: "Frappy Cramel", ar: "فرابى كراميل", price: 110 },
+      { en: "Frappy Vanilla", ar: "فرابى فانيليا", price: 110 },
+      { en: "Ice Stikana", ar: "ايس ستيكانا", price: 125 },
+      { en: "Frappuccino", ar: "فرابتشينو", price: 115 },
+    ],
+  },
+
+{
+    id: "sweets",
+    en: "Sweets",
+    ar: "حلويات",
+    icon: "🍮",
+    items: [
+      { en: "um Ali", ar: "ام علي", price: 100 },
+      { en: "Um Ali nuts", ar: "ام علي مكسرات", price: 110 },
+      { en: "Um Ali Fruits", ar: "أم علي فواكه", price: 130 },
+      { en: "Um Ali Estikana", ar: "أم علي استيكانا", price: 150 },
+      { en: "Fruit Salad", ar: "سلطة فواكه", price: 110 },
+      { en: "fruit salad + ice cream", ar: "سلطة فواكه+ايس كريم", price: 130 },
+      { en: "Paula Ice Cream", ar: "آيس كريم بوله", price: 30 },
+      { en: "Fruit Platter", ar: "طبق فاكهه", price: 150 },
+      { en: "Mix Chocolate", ar: "ميكس شوكليت", price: 125 },
+    ],
+  },
+
+ {
+    id: "soft-drink",
+    en: "Soft Drink",
+    ar: "مشروبات غازية",
+    icon: "🥤",
+    items: [
+      { en: "Small Water", ar: "ماء صغير", price: 15 },
+      { en: "Pepsi", ar: "بيبسي", price: 35 },
+      { en: "Seven Up", ar: "سفن اب", price: 35 },
+      { en: "Cola", ar: "كولا", price: 35 },
+      { en: "Schweppes", ar: "شويبس", price: 35 },
+      { en: "Pearl", ar: "بيرل", price: 40 },
+      { en: "Fairuz", ar: "فيروز", price: 40 },
+      { en: "Red Bull", ar: "ريد بول", price: 110 },
+      { en: "Tonk", ar: "تونك", price: 60 },
+      { en: "soda", ar: "صودا", price: 60 },
+      { en: "Sparkling Water", ar: "مياه فوار", price: 60 },
+    ],
+  },
+
+  {
+    id: "shisha",
+    en: "Shisha",
+    ar: "شيشة",
+    icon: "💨",
+    items: [
+      { en: "Shisha Molasses", ar: "شيشة معسل", price: 23 },
+      { en: "Special Stecana Fruit Shisha", ar: "شيشة فواكه ستيكانا خاص", price: 150 },
+      { en: "Ma'sel Alexandria", ar: "معسيل اليكسندريا", price: 50 },
+      { en: "Medical Li", ar: "لى طبى", price: 15 },
+      { en: "Special Medical", ar: "لى طبي خاص", price: 25 },
+    ],
+  },
+];
